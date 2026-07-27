@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Set Game</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Set</h1>
+      <div id="info-bar">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Deck: <strong id="deck-remaining">0</strong></span>
+        <button id="new-game-btn">New Game</button>
+      </div>
+    </header>
+    <div id="message-bar" class="hidden"></div>
+    <div id="board"></div>
+    <div id="game-over-overlay" class="hidden">
+      <div id="game-over-box">
+        <h2>No more Sets!</h2>
+        <p>Final Score: <strong id="final-score">0</strong></p>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="/static/game.js"></script>
+</body>
+</html>
